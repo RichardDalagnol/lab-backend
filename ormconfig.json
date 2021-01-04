@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "Laboratorio",
+  "entities": [
+    "./src/modules/User/infra/typeorm/models/*.ts",
+    "./src/modules/Lab/infra/typeorm/models/*.ts"
+  ],
+  "migrations": [
+    "./src/shared/infra/typeorm/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations/"
+  }
+}
